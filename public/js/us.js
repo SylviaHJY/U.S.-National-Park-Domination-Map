@@ -67,7 +67,7 @@ function appendVisitText() {
 	$(list).addClass('center');
 	$('#btn').append(list);
 	$('#list').html('You have visited:');
-	$('#list').first().css('color', '#000000')
+	$('#list').first().css('color', '#0fc3e2')
 }
 
 function appendWishText() {
@@ -80,7 +80,7 @@ function appendWishText() {
 	$(list).addClass('center');
 	$('#btn').append(list);
 	$('#list').html('You wish to go:');
-	$('#list').first().css('color', '#000000')
+	$('#list').first().css('color', '#f87eb1')
 }
 
 // let AK = document.getElementById("Alaska");
@@ -563,8 +563,8 @@ if(document.getElementById("btn-record-data")!=null){
 				url: "http://localhost:3000/record",
 				dataType: 'json',
 				success: (record) => {
-					wishedRecord.innerText = `Added to wishlist: ${record.wishedAmount}/63`
-					visitedRecord.innerText = `Visited: ${record.visitedAmount}/63`
+					wishedRecord.innerHTML = `<h5>Added to wishlist: ${record.wishedAmount}/63</h5>`
+					visitedRecord.innerHTML = `<h5>Visited: ${record.visitedAmount}/63</h5>`
 				},
 				error: (e) => {
 					alert(e.responseText);
