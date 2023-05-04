@@ -60,6 +60,7 @@ app.use('/login', (req, res, next) => {
   }
   next();
 });
+
 configRoutes(app);
 app.listen(3000, () => {
   console.log("We've now got a server!");
