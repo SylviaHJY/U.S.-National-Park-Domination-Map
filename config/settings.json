@@ -1,6 +1,6 @@
 {
-    "mongoConfig": {
-      "serverUrl": "mongodb+srv://map23:Project123@cluster0.f1spr92.mongodb.net/?retryWrites=true&w=majority",
-      "database": "Park_Domination_Map"
-    }
+  "mongoConfig": {
+    "serverUrl": process.env.MONGODB_URI,
+    "database": process.env.MONGODB_DATABASE
   }
+}
