@@ -1,6 +1,6 @@
 {
   "mongoConfig": {
-    "serverUrl": process.env.MONGODB_URI,
-    "database": process.env.MONGODB_DATABASE
+    "serverUrl": "process.env.MONGODB_URI",
+    "database": "process.env.MONGODB_DATABASE"
   }
 }
